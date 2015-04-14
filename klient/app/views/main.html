@@ -3,6 +3,6 @@
 <hr/>
 <span>{{tweet}}</span>
 <hr/>
-<ul ng-repeat="t in tweets">
+<ul ng-repeat="t in tweets | orderBy: '-dato'">
   <li>{{t.dato | date : "dd.MM H:mm:ss"}}: {{t.melding}}</li>
 </ul>
