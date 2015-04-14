@@ -2,3 +2,7 @@
 <button type="button" ng-click="leggTilTweet()" ng-disabled="!tweet">tweet</button>
 <hr/>
 <span>{{tweet}}</span>
+<hr/>
+<ul ng-repeat="t in tweets">
+  <li>{{t}}</li>
+</ul>
