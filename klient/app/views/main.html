@@ -4,5 +4,5 @@
 <span>{{tweet}}</span>
 <hr/>
 <ul ng-repeat="t in tweets">
-  <li>{{t}}</li>
+  <li>{{t.dato | date : "dd.MM H:mm:ss"}}: {{t.melding}}</li>
 </ul>
